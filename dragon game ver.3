@@ -1,0 +1,54 @@
+#include "stdafx.h"
+#include <stdio.h>
+#include <windows.h>
+
+int main() {
+	int user_life = 100;
+	int mon_life = 200;
+	int gatavoju;
+	int jumsnozut;
+	int Nogalinat;
+	int a;
+
+	printf("******************************\n");
+	printf("드래곤의 세계에 입장하셨습니다\n");
+	printf("당신은 아래 마법문을 이용하여 드래곤을 처치해야 합니다 \n");
+	printf("******************************\n");
+	printf("<마법문>\n");
+	printf("gatavoju\n");//구워주마!(라트비아어)
+	printf("jumsnozut\n");//말려주마!(라트비아어)
+	printf("Nogalinat\n");//힐러(죽인다) (라트비아어)
+	printf("당신의 체력:%d \n", user_life); printf("드래곤의 체력:%d \n", mon_life);
+
+	void loop()
+	{
+
+		Sleep(5000);
+			user_life - 5
+
+	}
+
+
+
+	scanf_s("%s", &a);
+
+	if (a = gatavoju)
+		mon_life - 10;
+	printf("몬스터의 체력이 10달았습니다");
+
+	if (a = jumsnozut)
+		user_life - 10;
+	mon_life - 20;
+	printf("당신의 체력 10을 희생하여 드래곤의 체력을 20 깎았습니다");
+
+	if (a = Nogalinat)
+		user_life + 5;
+	printf("당신의 체력을 5만큼 회복하였습니다");
+
+	if (user_life <= 0)
+		printf("사망하셨습니다. 안타깝군요.");
+
+	if (mon_life <= 0)
+		printf("성공하셨군요! 축하드립니다.");
+
+}
