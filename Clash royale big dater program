@@ -1,3 +1,32 @@
 #include <stdio.h>
 
-printf("
+int main() {
+printf("<This program was made by jiwoong￦n>");
+printf("clash royale deck fixer￦n");
+
+scanf_s("%s", a);
+
+char arrows[] = "0";
+char bomber[] = "0";
+char archers[] = "0";
+//char knight
+char* a = "";
+
+if ( a = arrows ){
+printf("화살+1");
+arrows = arrows + 1;
+}
+
+if ( a = bomber ){
+printf("폭탄병+1");
+bomber = bomber + 1;
+}
+
+if( a = archers ){
+printf("아쳐+1");
+archers = archers + 1;
+}
+
+
+
+}
