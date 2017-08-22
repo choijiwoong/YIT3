@@ -9,24 +9,78 @@ scanf_s("%s", a);
 char arrows[] = "0";
 char bomber[] = "0";
 char archers[] = "0";
-//char knight
+char knight[] = "0";
+char fireball[] = "0";
+char minipekka[] = "0";
+char musketeer[] = "0";
+char giant[] = "0";
+char prince[] = "0";
+char babydragon[] = "0";
+char skeletonarmy[] = "0";
+char witch[] = "0";
+//아레나1
 char* a = "";
 
-if ( a = arrows ){
+if (a = arrows){
 printf("화살+1");
 arrows = arrows + 1;
 }
 
-if ( a = bomber ){
+if (a = bomber){
 printf("폭탄병+1");
 bomber = bomber + 1;
 }
 
-if( a = archers ){
+if(a = archers){
 printf("아쳐+1");
 archers = archers + 1;
 }
 
+if(a = knight){
+printf("기사+1");
+knight = knight + 1;
+}
+
+if(a = fireball){
+printf("파이어볼+1");
+fireball = fireball + 1;
+}
+
+if (a = minipekka){
+printf("미니페카+1");
+minipekka = minipekka +1;
+}
+
+if(a = musketeer){
+printf("머스킷병+1");
+musketeer = musketeer + 1;
+}
+
+if(a = giant){
+printf("자이언트+1 ");
+giant = giant + 1;
+}
+
+if(a = prince){
+printf("프린스+1");
+prince = prince + 1;
+}
+
+if(a = babydragon){
+printf("베이비드래곤+1");
+babydragon = babydragon + 1;
+}
+
+if(a = skeletonarmy){
+printf("해골군대+1");
+skeletonarmy = skeletonarmy +1;
+}
+
+if(a = witch){
+printf("마녀+1");
+witch = witch + 1;
+}
+//아레나1
 
 
 }
