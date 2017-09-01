@@ -1,0 +1,11 @@
+#include "stdafx.h"#include <stdio.h>
+int main() { int a;
+ char ID[5] = ""; char PASS[5] = "";
+ char user1_ID[5] = ""; char user1_PASS[5] = ""; char user2_ID[5] = ""; char user2_PASS[5] = "";
+ printf("Welcome To Go World!\n"); printf("Please Sign In Your account\n"); printf("1. Login\n2. Register\n");
+ scanf_s("%d", &a);
+ switch (a) { case 1:  printf("Please input your ID");  scanf_s("%s", &ID, sizeof(ID));  if (ID == user1_ID)  {   printf("Please input your password");   scanf_s("%s", &PASS, sizeof(PASS));
+   if (PASS == user1_PASS)   {    printf("Login!\n");    }  }
+ case 2:  printf("Please input your ID in 4\n");  scanf_s("%s", &user1_ID, sizeof(user1_ID));  printf("Please input your Password in 4\n");  scanf_s("%s", &user1_PASS, sizeof(user1_PASS));  main(); }
+ //scanf_s("%s", &user_input, sizeof(user_input));
+    return 0;}/*int asdf() { printf("계획은 성공!"); return 0;}*/
