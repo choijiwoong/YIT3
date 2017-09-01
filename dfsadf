@@ -1,26 +1,40 @@
-#include "stdafx.h
+#include "stdafx.h"
 #include <stdio.h>
+
 int main(){
- int menu;
+
+ int a;
+
  int ID; 
  int PASS;
+ 
  int user1_ID; 
  int user1_PASS; 
  int user2_ID; 
  int user2_PASS;
+ main2()
+ }
+ 
+ int main2(){
  printf("Welcome to Go world!\n"); 
  printf("1. Login\n2. Register\n"); 
- scanf_s("%d", &menu); 
- switch (menu) { 
+ 
+ scanf_s("%d", &a); 
+ 
+ switch (a) { 
+ 
  case 1:  
  printf("Please input your ID\n");  
  scanf_s("%d", &ID);
+ 
   if (ID == user1_ID){   
   printf("Please input your PASS\n");   
   scanf_s("%d", &PASS);   
+  
   if (PASS == user1_PASS)   {    
   printf("passed!");  
   }   
+  
   else {    
   return 0;   
   }  
@@ -28,14 +42,17 @@ int main(){
   else {   
   return 0; 
   }
+  
  case 2:  
  printf("Please input your ID\n");  
  scanf_s("%d", &user1_ID);  
  printf("Please input your Password\n");  
  scanf_s("%d", &user1_PASS);  
- main();
+ main2();
+ 
  default:  
  return 0; 
  }
  return 0;
  }
+    
