@@ -10,8 +10,7 @@ int main(){
  
  int user1_ID; 
  int user1_PASS; 
- int user2_ID; 
- int user2_PASS;
+ 
  main2()
  }
  
