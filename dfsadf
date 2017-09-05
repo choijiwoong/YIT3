@@ -1,57 +1,83 @@
 #include "stdafx.h"
 #include <stdio.h>
+#include <windows.h>
 
 int main(){
 
- int a;
+int menu1;
+//
+char *ID;
+char *PASS;
 
- int ID; 
- int PASS;
- 
- int user1_ID; 
- int user1_PASS; 
- 
- main2()
- }
- 
- int main2(){
- printf("Welcome to Go world!\n"); 
- printf("1. Login\n2. Register\n"); 
- 
- scanf_s("%d", &a); 
- 
- switch (a) { 
- 
- case 1:  
- printf("Please input your ID\n");  
- scanf_s("%d", &ID);
- 
-  if (ID == user1_ID){   
-  printf("Please input your PASS\n");   
-  scanf_s("%d", &PASS);   
-  
-  if (PASS == user1_PASS)   {    
-  printf("passed!");  
-  }   
-  
-  else {    
-  return 0;   
-  }  
-  }  
-  else {   
-  return 0; 
-  }
-  
- case 2:  
- printf("Please input your ID\n");  
- scanf_s("%d", &user1_ID);  
- printf("Please input your Password\n");  
- scanf_s("%d", &user1_PASS);  
- main2();
- 
- default:  
- return 0; 
- }
- return 0;
- }
-    
+char *user_ID;
+char *user_PASS;
+char *user_E-MAIL
+//
+printf(" This is Register Login System by Jiwoong\n");
+printf("Welcome to RLSJ!\n");
+printf("please login first.\nif you don't have register, enter register\n\n");
+printf("choose work\n");
+printf("1. Login\n2. Register\n");
+
+scanf_s("%d", &menu1);
+
+switch (menu1){
+
+case 1://login
+printf("Please enter your ID\n");
+scanf("%s", ID);
+printf("Please enter your Password\n");
+scanf_s("%s", PASS);
+
+if (ID=user_ID, PASS = user_PASS)
+{
+printf("Login suceed!\n");
+printf("Welcome to RLSJ\n");
+
+main_page();
+}
+
+else
+{
+printf("your ID or Password is wrong.\nPlease try again\n");
+main()
+}
+
+break;
+
+case 2://register
+
+printf("Please enter your new ID\n");
+scanf_s("%s", &user_ID);
+
+printf("Please enter your new Password\n");
+scanf_s("%s", &user_PASS);
+
+printf("Please enter your e-mail Address\n");
+scanf_s("%s", &user_E-MAIL);
+
+printf("Register suceed\nGo to main menu\n");
+
+system("pause");
+
+int main();
+
+break;
+
+default:
+
+system("cls");
+
+printf("Please check menu again\n\n");
+main();
+
+break;
+}
+
+return 0;
+}
+
+int main_page(){
+
+return 0;
+}
