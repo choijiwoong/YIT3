@@ -1,36 +1,5 @@
-#include <stdio.h>
-#include <windows.h>
-#include <string.h>
-
-int main()
-{
-system("color f3");
-system("title Jimo is working");
-printf("[지모 시험지 답안 번호 빈도 측정프로그램]\n");
-printf("시험지의 배점들을 입력해주세요. 최대5개\n");
-int base5, base1, base2, base3, base4;
-int num1,num2,num3,num4,num5;
-scanf_s("%f %f %f %f %f", &base1,&base2,&base3,&base4,&base5);
-system("pause");
-system("cls");
-printf("시험지에 출제되는 번호의 배점은\n%f, %f, %f, %f, %f입니다. \n맞으시면 go를, 틀리시면 back을 입력해주세요\n");
-char menu1[20];
-scanf_s("%s", menu1);
-if(sizeof(menu1) > 19)
-{
-printf("문자의 크기가 너무 큽니다. 처음부터 다시시작해주세요.\n");
-Sleep(3000);
-main();
-}
-else if(sizeof(menu1) > 100)
-{
-system("cls");
-system("color f4");
-system("title Security Moduel");
-printf("망가뜨리려고 작정하신분이네요.\n보안모듈을 작동시킵니다\n");
-Sleep(2000);
-}
-
-
-return 0;
-}
+#include <stdio.h>#include <windows.h>#include <string.h>
+int main(){ system("color f3"); system("title Jimo is working"); printf("[지모 시험지 답안 번호 빈도 측정프로그램]\n"); printf("시험지의 배점들을 입력해주세요. 최대5개\n"); float base5, base1, base2, base3, base4; //float num1, num2, num3, num4, num5; scanf_s("%f %f %f %f %f", &base1, &base2, &base3, &base4, &base5); system("pause"); system("cls"); printf("시험지에 출제되는 번호의 배점은\n%f, %f, %f, %f, %f입니다. \n맞으시면 go를, 틀리시면 back을 입력해주세요\n"); char menu1[20]; char go[10] = "go", stop[10] = "stop"; scanf_s("%s", menu1); if (sizeof(menu1) > 19) {  printf("문자의 크기가 너무 큽니다. 처음부터 다시시작해주세요.\n");  Sleep(3000);  system("cls");  main(); } else if (sizeof(menu1) > 100) {  system("cls");  system("color f4");  system("title Security Moduel");  printf("망가뜨리려고 작정하신분이네요.\n보안모듈을 작동시킵니다\n");  Sleep(2000); } else if (!strcmp(menu1, go)) {  printf("배점 1번 :%f", base1);  printf("배점 2번 :%f", base2);  printf("배점 3번 :%f", base3);  printf("배점 4번 :%f", base4);  printf("배점 5번 :%f", base5);
+  return 0; } else if (!strcmp(menu1, stop)) {  system("cls");  printf("1. 작업을 종료하기\n2. 초기화면으로 돌아가기\n");  int work;  scanf_s("%d", &work);  switch (work)  {  case 1:   printf("잠시후 작업을 종료합니다. 이용해주셔서 감사합니다.\n");   Sleep(3000);   system("cls");   system("taskkill /f /im cmd.exe");   break;
+  case 2:   printf("잠시후 초기화면으로 되돌아갑니다.\n");   Sleep(3000);   system("cls");   main();   break;
+  default :   printf("잘못된 숫자를 입력하셨습니다.\n");   system("pause");   system("cls");   main();   break;  }  return 0; } return 0;}
