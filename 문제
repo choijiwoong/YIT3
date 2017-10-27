@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <windows.h>
+#include <string.h>
+
+int main()
+{
+system("color f3");
+system("title Jimo is working");
+printf("[지모 시험지 답안 번호 빈도 측정프로그램]\n");
+printf("시험지의 배점들을 입력해주세요. 최대5개\n");
+int base5, base1, base2, base3, base4;
+int num1,num2,num3,num4,num5;
+scanf_s("%f %f %f %f %f", &base1,&base2,&base3,&base4,&base5);
+system("pause");
+system("cls");
+printf("시험지에 출제되는 번호의 배점은\n%f, %f, %f, %f, %f입니다. \n맞으시면 go를, 틀리시면 back을 입력해주세요\n");
+char menu1[20];
+scanf_s("%s", menu1);
+if(sizeof(menu1) > 19)
+{
+printf("문자의 크기가 너무 큽니다. 처음부터 다시시작해주세요.\n");
+Sleep(3000);
+main();
+}
+else if(sizeof(menu1) > 100)
+{
+system("cls");
+system("color f4");
+system("title Security Moduel");
+printf("망가뜨리려고 작정하신분이네요.\n보안모듈을 작동시킵니다\n");
+Sleep(2000);
+}
+
+
+return 0;
+}
